@@ -1,0 +1,19 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/logs*": true,
+    "**/.nyc_output": true,
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.nyc_output": true
+  },
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true
+}

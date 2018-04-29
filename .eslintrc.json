@@ -1,0 +1,14 @@
+{
+  "extends": "standard",
+  "globals": {
+  "describe": false,
+  "expect": false,
+    "it": false
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}

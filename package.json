@@ -1,0 +1,38 @@
+{
+  "name": "boilerplate-esm-nyc-mocha",
+  "version": "1.0.0",
+  "description": "Node.js boilerplate - ES Modules + Mocha + Nyc",
+  "license": "MIT",
+  "homepage": "https://github.com/andrezero/boilerplate-esm-nyc-mocha.git",
+  "author": "Andre Torgal <andre.torgal@gmail.com>",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/andrezero/boilerplate-esm-nyc-mocha.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "_mocha --require esm --watch",
+    "lint": "eslint --fix src/ test/",
+    "test": "nyc _mocha --require esm",
+    "build": "eslint src/ test/ && npm run test",
+    "coverage": "http-server coverage/"
+  },
+  "dependencies": {
+    "esm": "^3.0.28"
+  },
+  "esm": {
+    "cjs": true
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  }
+}
