@@ -50,7 +50,7 @@ npm run coverage
 Kudos:
 - [all the people trying hard out there](https://www.google.es/search?q=nyc+coverage+unknown)
 - [John-David Dalton's ESM package](https://github.com/standard-things/esm)
-- [ESM Zero Configuration](https://medium.com/web-on-the-edge/tomorrows-es-modules-today)
+- [ESM Zero Configuration](https://medium.com/web-on-the-edge/tomorrows-es-modules-today-c53d29ac448c)
 - [dschnare/std-esm-sandbox](https://github.com/dschnare/std-esm-sandbox/) - older boilderplate that was still using the deprecated `@std/esm`
 - [Native ES Modules in NodeJS: Status And Future Directions](https://medium.com/@giltayar/native-es-modules-in-nodejs-status-and-future-directions-part-i-ee5ea3001f71) - good read
 - [Testing in ES6 with Mocha and Babel 6](http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/) - another good read, even if Babel is no longer required here
