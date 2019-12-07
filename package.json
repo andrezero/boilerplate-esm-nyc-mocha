@@ -18,7 +18,7 @@
     "coverage": "http-server coverage/"
   },
   "dependencies": {
-    "esm": "^3.0.28"
+    "esm": "^3.2.25"
   },
   "esm": {
     "cjs": true
