@@ -11,18 +11,33 @@ Uses:
 - [nyc](https://github.com/istanbuljs/nyc)
 
 Includes:
+- Eslint + Prettier config
 - VSCode launcher
 
 
 ## Getting started
 
 ```
-npm install
+npm ci
 
 npm run test
 npm run coverage
 ```
 
+
+## Known issues
+
+### Breakpoints not always detected
+
+Placing a breakpoint in VSCode does not work all the time. There seems to be an _off by one_ problem, displacing the breakpoint when you execute the tests.
+
+**Workaround:** [debugger](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) works 100%. You will have to temporarily disable eslint/prettier auto fix, as the `debugger;` statement is automatically removed on save.
+
+### Files not exercised by tests are not included in coverage report
+
+Attempting to use `all: true` in `.nycrc` causes it to crash with `Cannot convert undefined or null to object`. Possibly related with this issue: [--all is super broken](https://github.com/istanbuljs/nyc/issues/938).
+
+**Workaround:** adding a placeholder test for each file will report the file.
 
 ## What makes it work
 

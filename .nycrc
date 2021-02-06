@@ -1,15 +1,16 @@
 {
   "reporter": [
+    "lcov",
     "html",
     "text",
     "text-summary"
   ],
+  "check-coverage": true,
   "include": [
     "src/**/*.js"
   ],
   "require": [
     "esm"
   ],
-  "check-coverage": false,
   "cache": true
 }

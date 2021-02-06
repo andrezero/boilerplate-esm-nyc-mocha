@@ -12,9 +12,9 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "_mocha --require esm --watch",
-    "lint": "eslint --fix src/ test/",
-    "test": "nyc _mocha --require esm",
-    "build": "eslint src/ test/ && npm run test",
+    "lint": "eslint src/ test/",
+    "test": "nyc --all _mocha --require esm",
+    "build": "npm run lint && npm run test",
     "coverage": "http-server coverage/"
   },
   "dependencies": {
